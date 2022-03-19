@@ -15,10 +15,10 @@ const routes: Array<RouteRecordRaw> = [
         name: 'home',
         component: () => import('/@/views/home/index.vue'),
       },
-      // {
-      //   path: '/menu',
-      //   component: () => import('/@/views/menu/index.vue')
-      // },
+      {
+        path: '/chooseArea',
+        component: () => import('/@/views/components/chooseArea/index.vue')
+      },
       {
         path: '/formCom',
         name: 'formCom',
@@ -45,10 +45,10 @@ const routes: Array<RouteRecordRaw> = [
       },
     ]
   },
-  {
-    path: '/:pathMatch(.*)*',
-    redirect: '/error'
-  },
+  // {
+  //   path: '/:pathMatch(.*)*',
+  //   redirect: '/error'
+  // },
   {
     path: '/error',
     name: 'error',

@@ -1,11 +1,11 @@
 <template>
   <el-container>
     <el-aside width="auto">
-      <nav-menu></nav-menu>
+      <nav-menu :isCollapse="isCollapse"></nav-menu>
     </el-aside>
     <el-container>
       <el-header height="auto">
-        <nav-header></nav-header>
+        <nav-header v-model:isCollapse="isCollapse"></nav-header>
       </el-header>
       <el-main>
         <router-view />
@@ -15,6 +15,8 @@
 </template>
 
 <script lang="ts" setup>
+  import { ref } from 'vue';
+  const isCollapse = ref(false);
   import NavMenu from './NavMenu/index.vue';
   import NavHeader from './NavHeader/index.vue';
 </script>

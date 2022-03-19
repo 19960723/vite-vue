@@ -30,7 +30,7 @@ export default defineConfig({
     // 🔥此处添加全局scss🔥
     preprocessorOptions: {
       scss: {
-        additionalData: '@import "@/styles/index.scss";'
+        additionalData: '@import "./src/styles/index.scss";'
       }
     }
   },
