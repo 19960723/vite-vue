@@ -16,7 +16,7 @@
 
 <script lang="ts" setup>
   import { ref } from 'vue';
-  const isCollapse = ref(false);
+  const isCollapse = ref(true);
   import NavMenu from './NavMenu/index.vue';
   import NavHeader from './NavHeader/index.vue';
 </script>
