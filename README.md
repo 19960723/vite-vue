@@ -13,3 +13,5 @@ alias 配置地址路径生产环境下移除 console.log element-plus 按需引
 message 弹框
 
 tabs
+
+axios + vue-router + vue + element-plus + pinia

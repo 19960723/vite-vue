@@ -1,8 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-import store from './store'
-// import "./styles/index.scss"
+import {createPinia} from "pinia";
+
 import globalCom from  "/@/components/globalComponents.ts"
 import * as Icons from '@element-plus/icons-vue'
 const app = createApp(App);
@@ -15,6 +15,6 @@ for (let i in Icons) {
 
 app
 .use(router)
-.use(store)
+.use(createPinia())
 .use(globalCom)
 .mount('#app')

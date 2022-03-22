@@ -6,13 +6,14 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "lint:eslint": "eslint --cache --max-warnings 0  \"{src,mock}/**/*.{vue,ts,tsx}\" --fix",
+    "lint:eslint": "eslint --cache --max-warnings 0  \"{src,mock}/**/*.{vue,ts,tsx,js,jsx,}\" --fix",
     "lint:prettier": "prettier --write  \"src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\""
   },
   "dependencies": {
     "@element-plus/icons-vue": "^0.2.7",
     "axios": "^0.25.0",
     "element-plus": "^2.0.1",
+    "pinia": "^2.0.12",
     "vue": "^3.2.25",
     "vue-router": "^4.0.12",
     "vuex": "^4.0.2"
@@ -42,7 +43,8 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "eslint --fix",
-      "prettier --write"
+      "prettier --write",
+      "yarn lint:eslint"
     ],
     "{!(package)*.json,*.code-snippets,.!(browserslist)*rc}": [
       "prettier --write--parser json"
