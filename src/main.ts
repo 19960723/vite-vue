@@ -10,7 +10,6 @@ const app = createApp(App);
 for (let i in Icons) {
   // 注册全部组件
   app.component(`el-${i}`, (Icons as any)[i])
-  
 }
 
 app
