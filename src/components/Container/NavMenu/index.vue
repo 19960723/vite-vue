@@ -9,7 +9,13 @@
       default: true,
     },
   });
-  const data = [
+  type dataType = {
+    icon: string;
+    name: string;
+    index: string;
+    children?: [];
+  };
+  const data: dataType[] = [
     {
       icon: 'HomeFilled',
       name: '首页',

@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 // import "./styles/index.scss"
-import globalCom from  "/@/components/globalComponents.ts"
+import globalCom from  "/@/components/globalComponents"
 import * as Icons from '@element-plus/icons-vue'
 const app = createApp(App);
 
