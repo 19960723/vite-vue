@@ -40,4 +40,4 @@ jobs:
           password: ${{secrets.SERVER_PASSWORD}}
           port: 22
           source: "/dist"
-          target: ${{secrets.ERVER_TARGET}}
+          target: ${{secrets.SERVER_TARGET}}
