@@ -1,9 +1,15 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+<<<<<<< HEAD
 import {createPinia} from "pinia";
 
 import globalCom from  "/@/components/globalComponents.ts"
+=======
+import store from './store'
+// import "./styles/index.scss"
+import globalCom from  "/@/components/globalComponents"
+>>>>>>> develop
 import * as Icons from '@element-plus/icons-vue'
 const app = createApp(App);
 
