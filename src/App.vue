@@ -1,5 +1,6 @@
 <template>
-  <div id="nav">啦啦啦
+  <div id="nav">
+  555
     <router-view />
   </div>
 </template>
