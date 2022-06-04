@@ -1,6 +1,6 @@
 <template>
   <div id="nav">
-  555666
+  555666 二次提交
     <router-view />
   </div>
 </template>
